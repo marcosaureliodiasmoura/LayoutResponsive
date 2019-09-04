@@ -8,10 +8,31 @@
         <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
     </head>
     <body>
-       <div class="center">
-            <div>
-            <span>Vamos codar</span>
+       <header>
+            <div class="center">
+            
+            <h1>Vamos codar</h1>
+
+            <a href="#" class="menu">
+                    <i class="fa fa-bars"></i>
+                  </a>
+
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Tecnologias</a>
+                <a href="#">Blog</a>
+                <a href="#">Contato</a>
+            </nav>
         </div>
        </div>
+       </header>
+       <script>
+            const menu = document.querySelector('.menu');
+            menu.addEventListener('click', function(){
+            this.classList.toggle('open');
+            });
+            </script>
     </body>
+    
 </html>
